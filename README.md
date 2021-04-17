@@ -1,6 +1,6 @@
 # Fitch Cheney - a card trick
 
-Inspired by the [YouTube video The Pigeon Hole Principle: 7 gorgeous proofs] (https://www.youtube.com/watch?v=TCZ3YwbcDaw) by Burkard Polster (Mathologer)
+Inspired by the [YouTube video](https://www.youtube.com/watch?v=TCZ3YwbcDaw) "The Pigeon Hole Principle: 7 gorgeous proofs" by Burkard Polster (Mathologer)
 
 # The Trick
 Explaining [PDF](https://web.northeastern.edu/seigen/11Magic/FitchCheneyFiveCardCount/Fitch%20Cheney%27s%20Five%20Card%20Trick%20-%20Colm%20Mulcahy.pdf)
