@@ -10,7 +10,7 @@ The order of the cards for the ranking is 2, 3, 4, ... A and diamonds, hearts, s
 
 In the iOS Settings app, you can scroll to Fitch Cheney and adjust (a) the language of the only word (card) and the position of the key card between 1 and 4
 
-### privacy policy of the Fitch Cheney App
+# Privacy Policy of the Fitch Cheney App
 
 What information does the Application obtain and how is it used?
 The only input of the app are the user inputs when selecting a card. The app does not store data. The app does not connect to the Internet.
