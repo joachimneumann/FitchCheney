@@ -1,4 +1,4 @@
-# Fitch Cheney - a card trick
+# Fitch Cheney - a mathematical card trick
 
 Inspired by the [YouTube video](https://www.youtube.com/watch?v=TCZ3YwbcDaw) "The Pigeon Hole Principle: 7 gorgeous proofs" by Burkard Polster (Mathologer)
 
