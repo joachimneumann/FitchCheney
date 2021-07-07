@@ -10,8 +10,10 @@ import SwiftUI
 @main
 struct Fitch_CheneyApp: App {
     var body: some Scene {
+        let viewModel = ViewModel()
         WindowGroup {
-            MainView(viewModel: ViewModel())
+            MainView()
+                .environmentObject(viewModel)
                 .statusBar(hidden: true)
         }
     }

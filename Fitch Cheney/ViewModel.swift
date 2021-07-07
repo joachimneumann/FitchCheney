@@ -30,7 +30,7 @@ class ViewModel: ObservableObject {
     }
 
     var numberOfCards: Int {
-        model.cards.count
+        model.numberOfCards()
     }
     
     @objc func reset() {
@@ -72,10 +72,10 @@ class ViewModel: ObservableObject {
                 self.whiteScreen = true
                 withAnimation(.easeIn(duration: 1.0)) {
                     self.whiteScreen = false
-                    self.model.cards.append(Model.Card(suit: self.selectedSuit!, number: self.selectedNumber!))
+                    self.model.newCard(Model.Card(suit: self.selectedSuit!, number: self.selectedNumber!))
                     self.selectedNumber = nil
                     self.selectedSuit = nil
-                    if self.model.cards.count == 4 {
+                    if self.model.numberOfCards() == 4 {
                         let keyCardPosition = UserDefaults.standard.integer(forKey: "KeyCardPosition")
                         self.model.calc(keyCardPosition: keyCardPosition)
                     }
@@ -99,7 +99,7 @@ class ViewModel: ObservableObject {
         self.whiteScreen = true
         withAnimation(.easeIn(duration: 1.0)) {
             self.whiteScreen = false
-            model.cards.removeLast()
+            model.removeLastCard()
         }
     }
     

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Number: View {
-    @ObservedObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: ViewModel
     let w: CGFloat = 0.23
     var body: some View {
         GeometryReader { geometry in
@@ -89,7 +89,7 @@ struct White: View {
 }
 
 struct Solution: View {
-    @ObservedObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: ViewModel
     @State var flipped = false
     @State var turn90 = false
     let duration90 = 0.3
@@ -137,15 +137,15 @@ struct Solution: View {
 
 
 struct MainView: View {
-    @ObservedObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: ViewModel
     var body: some View {
         if viewModel.whiteScreen {
             White()
         } else {
             if viewModel.solution != nil {
-                Solution(viewModel: viewModel)
+                Solution()
             } else {
-                Number(viewModel: viewModel)
+                Number()
             }
         }
     }
@@ -153,7 +153,9 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(viewModel:ViewModel())
+        let viewModel = ViewModel()
+        MainView()
+            .environmentObject(viewModel)
     }
 }
 

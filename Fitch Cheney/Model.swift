@@ -8,6 +8,7 @@
 import Foundation
 
 struct Model {
+    var phoneNotification = PhoneNotification()
     enum Suit {
         case diamonds, hearts, spades, clubs
         var name: String {
@@ -259,10 +260,22 @@ struct Model {
         solution = "\(endNumber.name)_of_\(cards[posKey].suit.name)"
     }
 
-    
     var solution: String? = nil
-    var cards: [Card] = []
+    private var cards: [Card] = []
         
+    func numberOfCards() -> Int {
+        return cards.count
+    }
+    
+    mutating func newCard(_ c: Card) {
+        cards.append(c)
+        phoneNotification.send(c)
+    }
+
+    mutating func removeLastCard() {
+        cards.removeLast()
+    }
+
     mutating func reset() {
         cards = []
         solution = nil

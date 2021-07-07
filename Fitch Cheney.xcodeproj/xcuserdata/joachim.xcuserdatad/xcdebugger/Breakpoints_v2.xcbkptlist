@@ -62,8 +62,8 @@
             filePath = "Fitch Cheney/Model.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "calc(keyCardPosition:)"
             landmarkType = "7">
          </BreakpointContent>

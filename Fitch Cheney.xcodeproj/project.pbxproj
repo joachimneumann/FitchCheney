@@ -7,36 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA43B6F2262D665500B295AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA43B6F1262D665500B295AB /* Assets.xcassets */; };
+		AA43B6F9262D665500B295AB /* FitchCheney Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA43B6F8262D665500B295AB /* FitchCheney Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA43B6FE262D665500B295AB /* Fitch_CheneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43B6FD262D665500B295AB /* Fitch_CheneyApp.swift */; };
+		AA43B700262D665500B295AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43B6FF262D665500B295AB /* ContentView.swift */; };
+		AA43B702262D665500B295AB /* ViewModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43B701262D665500B295AB /* ViewModelWatch.swift */; };
+		AA43B704262D665500B295AB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43B703262D665500B295AB /* NotificationView.swift */; };
+		AA43B706262D665500B295AB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43B705262D665500B295AB /* ComplicationController.swift */; };
+		AA43B708262D665600B295AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA43B707262D665600B295AB /* Assets.xcassets */; };
+		AA43B70B262D665600B295AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA43B70A262D665600B295AB /* Preview Assets.xcassets */; };
+		AA43B710262D665600B295AB /* FitchCheney.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AA43B6EF262D665300B295AB /* FitchCheney.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA65C54A2695795C003F6B3D /* PhoneNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA65C5492695795C003F6B3D /* PhoneNotification.swift */; };
+		AA65C54D26957E81003F6B3D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA65C54C26957E81003F6B3D /* NotificationController.swift */; };
 		AA86DEED262996F400D9BECC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86DEEC262996F400D9BECC /* SettingsView.swift */; };
 		AA86DEF52629A18800D9BECC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA86DEF42629A18800D9BECC /* Settings.bundle */; };
 		AA97011126283F1500EA47BF /* Fitch_CheneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97011026283F1500EA47BF /* Fitch_CheneyApp.swift */; };
 		AA97011326283F1500EA47BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97011226283F1500EA47BF /* MainView.swift */; };
 		AA97011526283F1700EA47BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA97011426283F1700EA47BF /* Assets.xcassets */; };
 		AA97011826283F1700EA47BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA97011726283F1700EA47BF /* Preview Assets.xcassets */; };
-		AA97012326283F1700EA47BF /* Fitch_CheneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97012226283F1700EA47BF /* Fitch_CheneyTests.swift */; };
-		AA97012E26283F1800EA47BF /* Fitch_CheneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97012D26283F1800EA47BF /* Fitch_CheneyUITests.swift */; };
 		AA97014D262841E500EA47BF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97014C262841E500EA47BF /* Model.swift */; };
 		AA970158262882A600EA47BF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA970157262882A600EA47BF /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AA97011F26283F1700EA47BF /* PBXContainerItemProxy */ = {
+		AA43B6FA262D665500B295AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA97010526283F1500EA47BF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA97010C26283F1500EA47BF;
-			remoteInfo = "Fitch Cheney";
+			remoteGlobalIDString = AA43B6F7262D665500B295AB;
+			remoteInfo = "FitchCheney Extension";
 		};
-		AA97012A26283F1700EA47BF /* PBXContainerItemProxy */ = {
+		AA43B70E262D665600B295AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA97010526283F1500EA47BF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA97010C26283F1500EA47BF;
-			remoteInfo = "Fitch Cheney";
+			remoteGlobalIDString = AA43B6EE262D665300B295AB;
+			remoteInfo = FitchCheney;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AA43B711262D665600B295AB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AA43B710262D665600B295AB /* FitchCheney.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA43B714262D665600B295AB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA43B6F9262D665500B295AB /* FitchCheney Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AA43B6EF262D665300B295AB /* FitchCheney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitchCheney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA43B6F1262D665500B295AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA43B6F3262D665500B295AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA43B6F8262D665500B295AB /* FitchCheney Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FitchCheney Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA43B6FD262D665500B295AB /* Fitch_CheneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitch_CheneyApp.swift; sourceTree = "<group>"; };
+		AA43B6FF262D665500B295AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA43B701262D665500B295AB /* ViewModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWatch.swift; sourceTree = "<group>"; };
+		AA43B703262D665500B295AB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		AA43B705262D665500B295AB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AA43B707262D665600B295AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA43B70A262D665600B295AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA43B70C262D665600B295AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA43B70D262D665600B295AB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AA65C5492695795C003F6B3D /* PhoneNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNotification.swift; sourceTree = "<group>"; };
+		AA65C54C26957E81003F6B3D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		AA86DEEC262996F400D9BECC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AA86DEF42629A18800D9BECC /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		AA97010D26283F1500EA47BF /* Fitch Cheney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitch Cheney.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,32 +95,19 @@
 		AA97011426283F1700EA47BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA97011726283F1700EA47BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA97011926283F1700EA47BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA97011E26283F1700EA47BF /* Fitch CheneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fitch CheneyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA97012226283F1700EA47BF /* Fitch_CheneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitch_CheneyTests.swift; sourceTree = "<group>"; };
-		AA97012426283F1700EA47BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA97012926283F1700EA47BF /* Fitch CheneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fitch CheneyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA97012D26283F1800EA47BF /* Fitch_CheneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitch_CheneyUITests.swift; sourceTree = "<group>"; };
-		AA97012F26283F1800EA47BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA97014C262841E500EA47BF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AA970157262882A600EA47BF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AA43B6F5262D665500B295AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA97010A26283F1500EA47BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA97011B26283F1700EA47BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA97012626283F1700EA47BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,12 +117,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA43B6F0262D665400B295AB /* FitchCheney */ = {
+			isa = PBXGroup;
+			children = (
+				AA43B6F1262D665500B295AB /* Assets.xcassets */,
+				AA43B6F3262D665500B295AB /* Info.plist */,
+			);
+			path = FitchCheney;
+			sourceTree = "<group>";
+		};
+		AA43B6FC262D665500B295AB /* FitchCheney Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA43B6FD262D665500B295AB /* Fitch_CheneyApp.swift */,
+				AA43B6FF262D665500B295AB /* ContentView.swift */,
+				AA43B701262D665500B295AB /* ViewModelWatch.swift */,
+				AA65C54C26957E81003F6B3D /* NotificationController.swift */,
+				AA43B703262D665500B295AB /* NotificationView.swift */,
+				AA43B705262D665500B295AB /* ComplicationController.swift */,
+				AA43B707262D665600B295AB /* Assets.xcassets */,
+				AA43B70C262D665600B295AB /* Info.plist */,
+				AA43B70D262D665600B295AB /* PushNotificationPayload.apns */,
+				AA43B709262D665600B295AB /* Preview Content */,
+			);
+			path = "FitchCheney Extension";
+			sourceTree = "<group>";
+		};
+		AA43B709262D665600B295AB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA43B70A262D665600B295AB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		AA97010426283F1500EA47BF = {
 			isa = PBXGroup;
 			children = (
 				AA97010F26283F1500EA47BF /* Fitch Cheney */,
-				AA97012126283F1700EA47BF /* Fitch CheneyTests */,
-				AA97012C26283F1700EA47BF /* Fitch CheneyUITests */,
+				AA43B6F0262D665400B295AB /* FitchCheney */,
+				AA43B6FC262D665500B295AB /* FitchCheney Extension */,
 				AA97010E26283F1500EA47BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				AA97010D26283F1500EA47BF /* Fitch Cheney.app */,
-				AA97011E26283F1700EA47BF /* Fitch CheneyTests.xctest */,
-				AA97012926283F1700EA47BF /* Fitch CheneyUITests.xctest */,
+				AA43B6EF262D665300B295AB /* FitchCheney.app */,
+				AA43B6F8262D665500B295AB /* FitchCheney Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +176,7 @@
 			children = (
 				AA97014C262841E500EA47BF /* Model.swift */,
 				AA970157262882A600EA47BF /* ViewModel.swift */,
+				AA65C5492695795C003F6B3D /* PhoneNotification.swift */,
 				AA97011026283F1500EA47BF /* Fitch_CheneyApp.swift */,
 				AA97011226283F1500EA47BF /* MainView.swift */,
 				AA86DEEC262996F400D9BECC /* SettingsView.swift */,
@@ -124,27 +196,43 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AA97012126283F1700EA47BF /* Fitch CheneyTests */ = {
-			isa = PBXGroup;
-			children = (
-				AA97012226283F1700EA47BF /* Fitch_CheneyTests.swift */,
-				AA97012426283F1700EA47BF /* Info.plist */,
-			);
-			path = "Fitch CheneyTests";
-			sourceTree = "<group>";
-		};
-		AA97012C26283F1700EA47BF /* Fitch CheneyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AA97012D26283F1800EA47BF /* Fitch_CheneyUITests.swift */,
-				AA97012F26283F1800EA47BF /* Info.plist */,
-			);
-			path = "Fitch CheneyUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AA43B6EE262D665300B295AB /* FitchCheney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA43B718262D665600B295AB /* Build configuration list for PBXNativeTarget "FitchCheney" */;
+			buildPhases = (
+				AA43B6ED262D665300B295AB /* Resources */,
+				AA43B714262D665600B295AB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA43B6FB262D665500B295AB /* PBXTargetDependency */,
+			);
+			name = FitchCheney;
+			productName = FitchCheney;
+			productReference = AA43B6EF262D665300B295AB /* FitchCheney.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AA43B6F7262D665500B295AB /* FitchCheney Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA43B717262D665600B295AB /* Build configuration list for PBXNativeTarget "FitchCheney Extension" */;
+			buildPhases = (
+				AA43B6F4262D665500B295AB /* Sources */,
+				AA43B6F5262D665500B295AB /* Frameworks */,
+				AA43B6F6262D665500B295AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FitchCheney Extension";
+			productName = "FitchCheney Extension";
+			productReference = AA43B6F8262D665500B295AB /* FitchCheney Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		AA97010C26283F1500EA47BF /* Fitch Cheney */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA97013226283F1800EA47BF /* Build configuration list for PBXNativeTarget "Fitch Cheney" */;
@@ -152,51 +240,17 @@
 				AA97010926283F1500EA47BF /* Sources */,
 				AA97010A26283F1500EA47BF /* Frameworks */,
 				AA97010B26283F1500EA47BF /* Resources */,
+				AA43B711262D665600B295AB /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AA43B70F262D665600B295AB /* PBXTargetDependency */,
 			);
 			name = "Fitch Cheney";
 			productName = "Fitch Cheney";
 			productReference = AA97010D26283F1500EA47BF /* Fitch Cheney.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AA97011D26283F1700EA47BF /* Fitch CheneyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA97013526283F1800EA47BF /* Build configuration list for PBXNativeTarget "Fitch CheneyTests" */;
-			buildPhases = (
-				AA97011A26283F1700EA47BF /* Sources */,
-				AA97011B26283F1700EA47BF /* Frameworks */,
-				AA97011C26283F1700EA47BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AA97012026283F1700EA47BF /* PBXTargetDependency */,
-			);
-			name = "Fitch CheneyTests";
-			productName = "Fitch CheneyTests";
-			productReference = AA97011E26283F1700EA47BF /* Fitch CheneyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AA97012826283F1700EA47BF /* Fitch CheneyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA97013826283F1800EA47BF /* Build configuration list for PBXNativeTarget "Fitch CheneyUITests" */;
-			buildPhases = (
-				AA97012526283F1700EA47BF /* Sources */,
-				AA97012626283F1700EA47BF /* Frameworks */,
-				AA97012726283F1700EA47BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AA97012B26283F1700EA47BF /* PBXTargetDependency */,
-			);
-			name = "Fitch CheneyUITests";
-			productName = "Fitch CheneyUITests";
-			productReference = AA97012926283F1700EA47BF /* Fitch CheneyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -207,16 +261,14 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					AA43B6EE262D665300B295AB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AA43B6F7262D665500B295AB = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					AA97010C26283F1500EA47BF = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					AA97011D26283F1700EA47BF = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = AA97010C26283F1500EA47BF;
-					};
-					AA97012826283F1700EA47BF = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = AA97010C26283F1500EA47BF;
 					};
 				};
 			};
@@ -234,13 +286,30 @@
 			projectRoot = "";
 			targets = (
 				AA97010C26283F1500EA47BF /* Fitch Cheney */,
-				AA97011D26283F1700EA47BF /* Fitch CheneyTests */,
-				AA97012826283F1700EA47BF /* Fitch CheneyUITests */,
+				AA43B6EE262D665300B295AB /* FitchCheney */,
+				AA43B6F7262D665500B295AB /* FitchCheney Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AA43B6ED262D665300B295AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA43B6F2262D665500B295AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA43B6F6262D665500B295AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA43B70B262D665600B295AB /* Preview Assets.xcassets in Resources */,
+				AA43B708262D665600B295AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA97010B26283F1500EA47BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,28 +320,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA97011C26283F1700EA47BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA97012726283F1700EA47BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AA43B6F4262D665500B295AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA65C54D26957E81003F6B3D /* NotificationController.swift in Sources */,
+				AA43B702262D665500B295AB /* ViewModelWatch.swift in Sources */,
+				AA43B700262D665500B295AB /* ContentView.swift in Sources */,
+				AA43B706262D665500B295AB /* ComplicationController.swift in Sources */,
+				AA43B6FE262D665500B295AB /* Fitch_CheneyApp.swift in Sources */,
+				AA43B704262D665500B295AB /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA97010926283F1500EA47BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AA86DEED262996F400D9BECC /* SettingsView.swift in Sources */,
+				AA65C54A2695795C003F6B3D /* PhoneNotification.swift in Sources */,
 				AA970158262882A600EA47BF /* ViewModel.swift in Sources */,
 				AA97011326283F1500EA47BF /* MainView.swift in Sources */,
 				AA97011126283F1500EA47BF /* Fitch_CheneyApp.swift in Sources */,
@@ -280,38 +349,112 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA97011A26283F1700EA47BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA97012326283F1700EA47BF /* Fitch_CheneyTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA97012526283F1700EA47BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA97012E26283F1800EA47BF /* Fitch_CheneyUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AA97012026283F1700EA47BF /* PBXTargetDependency */ = {
+		AA43B6FB262D665500B295AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA97010C26283F1500EA47BF /* Fitch Cheney */;
-			targetProxy = AA97011F26283F1700EA47BF /* PBXContainerItemProxy */;
+			target = AA43B6F7262D665500B295AB /* FitchCheney Extension */;
+			targetProxy = AA43B6FA262D665500B295AB /* PBXContainerItemProxy */;
 		};
-		AA97012B26283F1700EA47BF /* PBXTargetDependency */ = {
+		AA43B70F262D665600B295AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA97010C26283F1500EA47BF /* Fitch Cheney */;
-			targetProxy = AA97012A26283F1700EA47BF /* PBXContainerItemProxy */;
+			target = AA43B6EE262D665300B295AB /* FitchCheney */;
+			targetProxy = AA43B70E262D665600B295AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AA43B712262D665600B295AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A4DL788W9;
+				IBSC_MODULE = FitchCheney_Extension;
+				INFOPLIST_FILE = FitchCheney/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joachimneumann.FitchCheney.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		AA43B713262D665600B295AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A4DL788W9;
+				IBSC_MODULE = FitchCheney_Extension;
+				INFOPLIST_FILE = FitchCheney/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joachimneumann.FitchCheney.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		AA43B715262D665600B295AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FitchCheney Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8A4DL788W9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FitchCheney Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joachimneumann.FitchCheney.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		AA43B716262D665600B295AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FitchCheney Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8A4DL788W9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FitchCheney Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joachimneumann.FitchCheney.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 		AA97013026283F1800EA47BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -439,7 +582,7 @@
 				DEVELOPMENT_TEAM = 8A4DL788W9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Fitch Cheney/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +606,7 @@
 				DEVELOPMENT_TEAM = 8A4DL788W9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Fitch Cheney/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,93 +619,27 @@
 			};
 			name = Release;
 		};
-		AA97013626283F1800EA47BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8A4DL788W9;
-				INFOPLIST_FILE = "Fitch CheneyTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joachimneumann.Fitch-CheneyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitch Cheney.app/Fitch Cheney";
-			};
-			name = Debug;
-		};
-		AA97013726283F1800EA47BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8A4DL788W9;
-				INFOPLIST_FILE = "Fitch CheneyTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joachimneumann.Fitch-CheneyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitch Cheney.app/Fitch Cheney";
-			};
-			name = Release;
-		};
-		AA97013926283F1800EA47BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8A4DL788W9;
-				INFOPLIST_FILE = "Fitch CheneyUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joachimneumann.Fitch-CheneyUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Fitch Cheney";
-			};
-			name = Debug;
-		};
-		AA97013A26283F1800EA47BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8A4DL788W9;
-				INFOPLIST_FILE = "Fitch CheneyUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joachimneumann.Fitch-CheneyUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Fitch Cheney";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA43B717262D665600B295AB /* Build configuration list for PBXNativeTarget "FitchCheney Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA43B715262D665600B295AB /* Debug */,
+				AA43B716262D665600B295AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA43B718262D665600B295AB /* Build configuration list for PBXNativeTarget "FitchCheney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA43B712262D665600B295AB /* Debug */,
+				AA43B713262D665600B295AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA97010826283F1500EA47BF /* Build configuration list for PBXProject "Fitch Cheney" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -577,24 +654,6 @@
 			buildConfigurations = (
 				AA97013326283F1800EA47BF /* Debug */,
 				AA97013426283F1800EA47BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA97013526283F1800EA47BF /* Build configuration list for PBXNativeTarget "Fitch CheneyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA97013626283F1800EA47BF /* Debug */,
-				AA97013726283F1800EA47BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA97013826283F1800EA47BF /* Build configuration list for PBXNativeTarget "Fitch CheneyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA97013926283F1800EA47BF /* Debug */,
-				AA97013A26283F1800EA47BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
