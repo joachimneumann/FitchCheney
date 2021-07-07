@@ -10,7 +10,7 @@ import WatchConnectivity
 
 class ViewModelWatch: NSObject, WCSessionDelegate, ObservableObject {
     var session: WCSession
-    @Published var messageText = "empty"
+    @Published var messageText = "not connected"
     
     init(session: WCSession = .default) {
         self.session = session

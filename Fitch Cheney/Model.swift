@@ -258,6 +258,8 @@ struct Model {
         }
         let endNumber = number(value: newIndex)
         solution = "\(endNumber.name)_of_\(cards[posKey].suit.name)"
+        let solutionCard = Card(suit: cards[posKey].suit, number: endNumber)
+        phoneNotification.send(solutionCard)
     }
 
     var solution: String? = nil
@@ -269,7 +271,7 @@ struct Model {
     
     mutating func newCard(_ c: Card) {
         cards.append(c)
-        phoneNotification.send(c)
+        phoneNotification.send("\(cards.count)")
     }
 
     mutating func removeLastCard() {
@@ -279,6 +281,7 @@ struct Model {
     mutating func reset() {
         cards = []
         solution = nil
+        phoneNotification.send("...")
     }
 
     init() {

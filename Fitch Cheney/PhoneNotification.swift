@@ -25,7 +25,7 @@ class PhoneNotification: NSObject, WCSessionDelegate {
         session.delegate = self
         session.activate()
     }
-    
+
     func send(_ c: Model.Card) {
         let m = c.number.shortName+" of "+c.suit.name
         session.sendMessage(["Message": m], replyHandler: nil) {
@@ -33,6 +33,14 @@ class PhoneNotification: NSObject, WCSessionDelegate {
             print("phone sending: errorHandler")
         }
         print("phone sending: \(m)")
+    }
+
+    func send(_ s: String) {
+        session.sendMessage(["Message": s], replyHandler: nil) {
+            (error) in print(error.localizedDescription)
+            print("phone sending: errorHandler")
+        }
+        print("phone sending: \(s)")
     }
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {

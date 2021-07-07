@@ -15,7 +15,5 @@ struct Fitch_CheneyApp: App {
                 ContentView()
             }
         }
-
-        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
 }
