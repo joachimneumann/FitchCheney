@@ -8,7 +8,6 @@
 import Foundation
 
 struct Model {
-    var phoneNotification = PhoneNotification()
     enum Suit {
         case diamonds, hearts, spades, clubs
         var name: String {
@@ -203,7 +202,7 @@ struct Model {
         }
     }
     
-    mutating func calc(keyCardPosition: Int) {
+    mutating func calc(keyCardPosition: Int) -> Card {
         var index = -100
         var posKey = 0
         var pos1 = 1
@@ -259,7 +258,7 @@ struct Model {
         let endNumber = number(value: newIndex)
         solution = "\(endNumber.name)_of_\(cards[posKey].suit.name)"
         let solutionCard = Card(suit: cards[posKey].suit, number: endNumber)
-        phoneNotification.send(solutionCard)
+        return solutionCard
     }
 
     var solution: String? = nil
@@ -271,7 +270,6 @@ struct Model {
     
     mutating func newCard(_ c: Card) {
         cards.append(c)
-        phoneNotification.send("\(cards.count)")
     }
 
     mutating func removeLastCard() {
@@ -281,7 +279,6 @@ struct Model {
     mutating func reset() {
         cards = []
         solution = nil
-        phoneNotification.send("...")
     }
 
     init() {

@@ -8,10 +8,14 @@
 import Foundation
 import WatchConnectivity
 
+
 class PhoneNotification: NSObject, WCSessionDelegate {
     @Published var messageText = ""
     var session: WCSession
-    
+    var usesAppleWatch: Bool {
+        return UserDefaults.standard.bool(forKey: "UsesAppleWatch")
+    }
+
     init(session: WCSession = .default) {
         print("Phone init()")
 
@@ -36,11 +40,13 @@ class PhoneNotification: NSObject, WCSessionDelegate {
     }
 
     func send(_ s: String) {
-        session.sendMessage(["Message": s], replyHandler: nil) {
-            (error) in print(error.localizedDescription)
-            print("phone sending: errorHandler")
+        if (usesAppleWatch) {
+            session.sendMessage(["Message": s], replyHandler: nil) {
+                (error) in print(error.localizedDescription)
+                print("phone sending: errorHandler")
+            }
+            print("phone sending: \(s)")
         }
-        print("phone sending: \(s)")
     }
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {

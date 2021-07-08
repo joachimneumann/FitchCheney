@@ -12,6 +12,7 @@ class ViewModel: ObservableObject {
     @Published var selectedNumber: Model.Number?
     @Published var selectedSuit: Model.Suit?
     @Published var whiteScreen: Bool = false
+    var phoneNotification = PhoneNotification()
 
     func hasBeenSelected(_ c: Model.Number) -> Bool {
         return false
@@ -38,11 +39,12 @@ class ViewModel: ObservableObject {
         withAnimation(.easeIn(duration: 2.0)) {
             self.whiteScreen = false
             model.reset()
+            phoneNotification.send("...")
             selectedNumber = nil
             selectedSuit = nil
         }
     }
-
+    
     var localisedCard: String {
         let language = UserDefaults.standard.string(forKey: "Language")
         switch language {
@@ -73,11 +75,13 @@ class ViewModel: ObservableObject {
                 withAnimation(.easeIn(duration: 1.0)) {
                     self.whiteScreen = false
                     self.model.newCard(Model.Card(suit: self.selectedSuit!, number: self.selectedNumber!))
+                    self.phoneNotification.send("\(self.model.numberOfCards())")
                     self.selectedNumber = nil
                     self.selectedSuit = nil
                     if self.model.numberOfCards() == 4 {
                         let keyCardPosition = UserDefaults.standard.integer(forKey: "KeyCardPosition")
-                        self.model.calc(keyCardPosition: keyCardPosition)
+                        let solutionCard = self.model.calc(keyCardPosition: keyCardPosition)
+                        self.phoneNotification.send(solutionCard)
                     }
                 }
             }
