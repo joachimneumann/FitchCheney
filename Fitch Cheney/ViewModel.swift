@@ -9,10 +9,10 @@ import SwiftUI
 
 class ViewModel: ObservableObject {
     @Published var model: Model
+    @Published var phoneNotification: PhoneNotification
     @Published var selectedNumber: Model.Number?
     @Published var selectedSuit: Model.Suit?
     @Published var whiteScreen: Bool = false
-    var phoneNotification = PhoneNotification()
 
     func hasBeenSelected(_ c: Model.Number) -> Bool {
         return false
@@ -31,10 +31,12 @@ class ViewModel: ObservableObject {
     }
 
     var numberOfCards: Int {
-        model.numberOfCards()
+        print("XXXXXXXXXXXXXXXX model.numberOfCards() \(model.numberOfCards())")
+        return model.numberOfCards()
     }
 
-    func watchStatusColor() -> Color {
+    var watchStatusColor: Color {
+        print("XXXXXXXXXXXXXXXX phoneNotification.watchStatus \(phoneNotification.watchStatus)")
         switch phoneNotification.watchStatus {
         case .ok:
             return .white
@@ -130,6 +132,7 @@ class ViewModel: ObservableObject {
 
     init() {
         model = Model()
+        phoneNotification = PhoneNotification()
         reset()
         UserDefaults.standard.register(defaults: [String:Any]())
         NotificationCenter.default.addObserver(self,selector: #selector(reset),name: UserDefaults.didChangeNotification,object: nil)

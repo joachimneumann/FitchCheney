@@ -9,8 +9,7 @@ import Foundation
 import WatchConnectivity
 
 
-class PhoneNotification: NSObject, WCSessionDelegate {
-    @Published var messageText = ""
+class PhoneNotification: NSObject, WCSessionDelegate, ObservableObject {
     enum WatchStatus {
         case ok, unknown, error
     }
@@ -28,6 +27,7 @@ class PhoneNotification: NSObject, WCSessionDelegate {
         if (!WCSession.isSupported()) {
             print("Phone WCSession not supported.")
             watchStatus = .error
+            print("watchStatus = \(self.watchStatus)")
         } else {
             print("Phone WCSession supported.")
             session.delegate = self
@@ -43,17 +43,21 @@ class PhoneNotification: NSObject, WCSessionDelegate {
         if (usesAppleWatch) {
             session.sendMessage(["Message": s], replyHandler: {
                 (payload) in
-                guard let reply = payload["status"] as? String  else {
+                guard let reply = payload["status"] as? String else {
                     print("wrong reply from watch");
                     self.watchStatus = .error
-                    return }
+                    print("watchStatus = \(self.watchStatus)")
+                    return
+                }
                 print("reply from Watch: \(reply)")
                 self.watchStatus = .ok
+                print("watchStatus = \(self.watchStatus)")
             }) {
                 (error) in
                 print("error: phone sending")
                 print(error.localizedDescription)
                 self.watchStatus = .error
+                print("watchStatus = \(self.watchStatus)")
             }
             print("phone sending: \(s)")
         }
@@ -63,20 +67,21 @@ class PhoneNotification: NSObject, WCSessionDelegate {
         DispatchQueue.main.async {
             print("Phone activationDidComplete with state \(activationState)")
             self.watchStatus = .unknown
+            print("watchStatus = \(self.watchStatus)")
         }
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
         DispatchQueue.main.async {
-            self.messageText = "Phone did become inactive"
             self.watchStatus = .unknown
+            print("watchStatus = \(self.watchStatus)")
         }
     }
     
     func sessionDidDeactivate(_ session: WCSession) {
         DispatchQueue.main.async {
-            self.messageText = "Phone did deactivate"
             self.watchStatus = .unknown
+            print("watchStatus = \(self.watchStatus)")
         }
     }
     

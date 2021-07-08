@@ -39,18 +39,6 @@ class ViewModelWatch: NSObject, WCSessionDelegate, ObservableObject {
         replyHandler(replyValues)
     }
     
-//    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: ([String : Any]) -> Void) {
-//
-//        let replyValues = Dictionary<String, AnyObject>()
-//
-//        replyHandler(replyValues)
-//    }) {
-//        let m = message["Message"] as? String ?? "unknown"
-//        print("did receive message \(m)")
-//        DispatchQueue.main.async {
-//            self.messageText = m
-//        }
-//    }
 //    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
 //        let m = message["Message"] as? String ?? "unknown"
 //        print("did receive message \(m)")

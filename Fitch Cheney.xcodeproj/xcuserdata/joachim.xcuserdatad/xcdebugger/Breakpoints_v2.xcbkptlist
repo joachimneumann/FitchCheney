@@ -142,8 +142,8 @@
             filePath = "Fitch Cheney/ViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "selectNumber(_:)"
             landmarkType = "7">
          </BreakpointContent>

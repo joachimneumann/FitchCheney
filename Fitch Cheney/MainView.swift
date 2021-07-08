@@ -16,7 +16,7 @@ struct Number: View {
                 HStack {
                     Text("·")
                         .font(viewModel.font)
-                        .foregroundColor(viewModel.watchStatusColor())
+                        .foregroundColor(viewModel.watchStatusColor)
                         .padding(.bottom, 70)
                         .padding(.top, 30)
                     Text("←")
