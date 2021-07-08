@@ -17,7 +17,6 @@
 		AA43B70B262D665600B295AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA43B70A262D665600B295AB /* Preview Assets.xcassets */; };
 		AA43B710262D665600B295AB /* FitchCheney.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AA43B6EF262D665300B295AB /* FitchCheney.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AA65C54A2695795C003F6B3D /* PhoneNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA65C5492695795C003F6B3D /* PhoneNotification.swift */; };
-		AA86DEED262996F400D9BECC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86DEEC262996F400D9BECC /* SettingsView.swift */; };
 		AA86DEF52629A18800D9BECC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA86DEF42629A18800D9BECC /* Settings.bundle */; };
 		AA97011126283F1500EA47BF /* Fitch_CheneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97011026283F1500EA47BF /* Fitch_CheneyApp.swift */; };
 		AA97011326283F1500EA47BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97011226283F1500EA47BF /* MainView.swift */; };
@@ -83,7 +82,6 @@
 		AA43B70C262D665600B295AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA43B70D262D665600B295AB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		AA65C5492695795C003F6B3D /* PhoneNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNotification.swift; sourceTree = "<group>"; };
-		AA86DEEC262996F400D9BECC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AA86DEF42629A18800D9BECC /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		AA97010D26283F1500EA47BF /* Fitch Cheney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitch Cheney.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA97011026283F1500EA47BF /* Fitch_CheneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitch_CheneyApp.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				AA65C5492695795C003F6B3D /* PhoneNotification.swift */,
 				AA97011026283F1500EA47BF /* Fitch_CheneyApp.swift */,
 				AA97011226283F1500EA47BF /* MainView.swift */,
-				AA86DEEC262996F400D9BECC /* SettingsView.swift */,
 				AA97011426283F1700EA47BF /* Assets.xcassets */,
 				AA97011926283F1700EA47BF /* Info.plist */,
 				AA97011626283F1700EA47BF /* Preview Content */,
@@ -332,7 +329,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA86DEED262996F400D9BECC /* SettingsView.swift in Sources */,
 				AA65C54A2695795C003F6B3D /* PhoneNotification.swift in Sources */,
 				AA970158262882A600EA47BF /* ViewModel.swift in Sources */,
 				AA97011326283F1500EA47BF /* MainView.swift in Sources */,
