@@ -33,7 +33,18 @@ class ViewModel: ObservableObject {
     var numberOfCards: Int {
         model.numberOfCards()
     }
-    
+
+    func watchStatusColor() -> Color {
+        switch phoneNotification.watchStatus {
+        case .ok:
+            return .white
+        case .unknown:
+            return .orange
+        case .error:
+            return .red
+        }
+    }
+
     @objc func reset() {
         self.whiteScreen = true
         withAnimation(.easeIn(duration: 2.0)) {
@@ -75,13 +86,14 @@ class ViewModel: ObservableObject {
                 withAnimation(.easeIn(duration: 1.0)) {
                     self.whiteScreen = false
                     self.model.newCard(Model.Card(suit: self.selectedSuit!, number: self.selectedNumber!))
-                    self.phoneNotification.send("\(self.model.numberOfCards())")
                     self.selectedNumber = nil
                     self.selectedSuit = nil
                     if self.model.numberOfCards() == 4 {
                         let keyCardPosition = UserDefaults.standard.integer(forKey: "KeyCardPosition")
                         let solutionCard = self.model.calc(keyCardPosition: keyCardPosition)
                         self.phoneNotification.send(solutionCard)
+                    } else {
+                        self.phoneNotification.send("\(self.model.numberOfCards())")
                     }
                 }
             }

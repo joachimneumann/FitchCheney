@@ -27,12 +27,35 @@ class ViewModelWatch: NSObject, WCSessionDelegate, ObservableObject {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("Watch activationDidComplete \(activationState)")
     }
-    
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         let m = message["Message"] as? String ?? "unknown"
         print("did receive message \(m)")
         DispatchQueue.main.async {
             self.messageText = m
         }
+        var replyValues = Dictionary<String, AnyObject>()
+        replyValues["status"] = "ok" as AnyObject
+        replyHandler(replyValues)
     }
+    
+//    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: ([String : Any]) -> Void) {
+//
+//        let replyValues = Dictionary<String, AnyObject>()
+//
+//        replyHandler(replyValues)
+//    }) {
+//        let m = message["Message"] as? String ?? "unknown"
+//        print("did receive message \(m)")
+//        DispatchQueue.main.async {
+//            self.messageText = m
+//        }
+//    }
+//    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+//        let m = message["Message"] as? String ?? "unknown"
+//        print("did receive message \(m)")
+//        DispatchQueue.main.async {
+//            self.messageText = m
+//        }
+//    }
 }

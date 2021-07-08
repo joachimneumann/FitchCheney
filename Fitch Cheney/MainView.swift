@@ -14,11 +14,16 @@ struct Number: View {
         GeometryReader { geometry in
             VStack {
                 HStack {
+                    Text("·")
+                        .font(viewModel.font)
+                        .foregroundColor(viewModel.watchStatusColor())
+                        .padding(.bottom, 70)
+                        .padding(.top, 30)
                     Text("←")
                         .font(viewModel.font)
                         .padding(.bottom, 80)
                         .padding(.top, 30)
-                        .padding(.leading, 10)
+                        .padding(.leading, 0)
                         .opacity(viewModel.numberOfCards > 0 ? 1.0 : 0.0)
                         .onTapGesture {
                             viewModel.removeCard()

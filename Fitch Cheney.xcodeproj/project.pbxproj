@@ -15,7 +15,7 @@
 		AA43B706262D665500B295AB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43B705262D665500B295AB /* ComplicationController.swift */; };
 		AA43B708262D665600B295AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA43B707262D665600B295AB /* Assets.xcassets */; };
 		AA43B70B262D665600B295AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA43B70A262D665600B295AB /* Preview Assets.xcassets */; };
-		AA43B710262D665600B295AB /* FitchCheney.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AA43B6EF262D665300B295AB /* FitchCheney.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA43B710262D665600B295AB /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AA43B6EF262D665300B295AB /* Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AA65C54A2695795C003F6B3D /* PhoneNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA65C5492695795C003F6B3D /* PhoneNotification.swift */; };
 		AA86DEF52629A18800D9BECC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA86DEF42629A18800D9BECC /* Settings.bundle */; };
 		AA97011126283F1500EA47BF /* Fitch_CheneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97011026283F1500EA47BF /* Fitch_CheneyApp.swift */; };
@@ -50,7 +50,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				AA43B710262D665600B295AB /* FitchCheney.app in Embed Watch Content */,
+				AA43B710262D665600B295AB /* Watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA43B6EF262D665300B295AB /* FitchCheney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitchCheney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA43B6EF262D665300B295AB /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA43B6F1262D665500B295AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA43B6F3262D665500B295AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA43B6F8262D665500B295AB /* FitchCheney Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FitchCheney Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +83,7 @@
 		AA43B70D262D665600B295AB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		AA65C5492695795C003F6B3D /* PhoneNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNotification.swift; sourceTree = "<group>"; };
 		AA86DEF42629A18800D9BECC /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		AA97010D26283F1500EA47BF /* Fitch Cheney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitch Cheney.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA97010D26283F1500EA47BF /* iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA97011026283F1500EA47BF /* Fitch_CheneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitch_CheneyApp.swift; sourceTree = "<group>"; };
 		AA97011226283F1500EA47BF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AA97011426283F1700EA47BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 		AA97010E26283F1500EA47BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA97010D26283F1500EA47BF /* Fitch Cheney.app */,
-				AA43B6EF262D665300B295AB /* FitchCheney.app */,
+				AA97010D26283F1500EA47BF /* iPhone.app */,
+				AA43B6EF262D665300B295AB /* Watch.app */,
 				AA43B6F8262D665500B295AB /* FitchCheney Extension.appex */,
 			);
 			name = Products;
@@ -190,9 +190,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA43B6EE262D665300B295AB /* FitchCheney */ = {
+		AA43B6EE262D665300B295AB /* Watch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA43B718262D665600B295AB /* Build configuration list for PBXNativeTarget "FitchCheney" */;
+			buildConfigurationList = AA43B718262D665600B295AB /* Build configuration list for PBXNativeTarget "Watch" */;
 			buildPhases = (
 				AA43B6ED262D665300B295AB /* Resources */,
 				AA43B714262D665600B295AB /* Embed App Extensions */,
@@ -202,9 +202,9 @@
 			dependencies = (
 				AA43B6FB262D665500B295AB /* PBXTargetDependency */,
 			);
-			name = FitchCheney;
+			name = Watch;
 			productName = FitchCheney;
-			productReference = AA43B6EF262D665300B295AB /* FitchCheney.app */;
+			productReference = AA43B6EF262D665300B295AB /* Watch.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		AA43B6F7262D665500B295AB /* FitchCheney Extension */ = {
@@ -224,9 +224,9 @@
 			productReference = AA43B6F8262D665500B295AB /* FitchCheney Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		AA97010C26283F1500EA47BF /* Fitch Cheney */ = {
+		AA97010C26283F1500EA47BF /* iPhone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA97013226283F1800EA47BF /* Build configuration list for PBXNativeTarget "Fitch Cheney" */;
+			buildConfigurationList = AA97013226283F1800EA47BF /* Build configuration list for PBXNativeTarget "iPhone" */;
 			buildPhases = (
 				AA97010926283F1500EA47BF /* Sources */,
 				AA97010A26283F1500EA47BF /* Frameworks */,
@@ -238,9 +238,9 @@
 			dependencies = (
 				AA43B70F262D665600B295AB /* PBXTargetDependency */,
 			);
-			name = "Fitch Cheney";
+			name = iPhone;
 			productName = "Fitch Cheney";
-			productReference = AA97010D26283F1500EA47BF /* Fitch Cheney.app */;
+			productReference = AA97010D26283F1500EA47BF /* iPhone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -276,8 +276,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA97010C26283F1500EA47BF /* Fitch Cheney */,
-				AA43B6EE262D665300B295AB /* FitchCheney */,
+				AA97010C26283F1500EA47BF /* iPhone */,
+				AA43B6EE262D665300B295AB /* Watch */,
 				AA43B6F7262D665500B295AB /* FitchCheney Extension */,
 			);
 		};
@@ -347,7 +347,7 @@
 		};
 		AA43B70F262D665600B295AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA43B6EE262D665300B295AB /* FitchCheney */;
+			target = AA43B6EE262D665300B295AB /* Watch */;
 			targetProxy = AA43B70E262D665600B295AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -619,7 +619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA43B718262D665600B295AB /* Build configuration list for PBXNativeTarget "FitchCheney" */ = {
+		AA43B718262D665600B295AB /* Build configuration list for PBXNativeTarget "Watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA43B712262D665600B295AB /* Debug */,
@@ -637,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA97013226283F1800EA47BF /* Build configuration list for PBXNativeTarget "Fitch Cheney" */ = {
+		AA97013226283F1800EA47BF /* Build configuration list for PBXNativeTarget "iPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA97013326283F1800EA47BF /* Debug */,
